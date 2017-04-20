@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="triangle" class="org.mohit.com.Triangle">
+        <constructor-arg type="java.lang.String" value="Equilateral"/>    <!--or use index="0"-->
+        <constructor-arg index="1" value="20"/>   <!--or use type="int"-->
+    </bean>
+</beans>
