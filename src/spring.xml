@@ -6,4 +6,27 @@
         <constructor-arg type="java.lang.String" value="Equilateral"/>    <!--or use index="0"-->
         <constructor-arg index="1" value="20"/>   <!--or use type="int"-->
     </bean>
+
+    <bean id="triangle-obj" class="com.mohit.objects.Triangle">
+        <property name="pointA" ref="zeropoint"/>
+        <property name="pointB" ref="firstpoint"/>
+        <property name="pointC" ref="secondpoint"/>
+    </bean>
+
+    <bean id="zeropoint" class="com.mohit.objects.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="firstpoint" class="com.mohit.objects.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="secondpoint" class="com.mohit.objects.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
+
+
 </beans>
